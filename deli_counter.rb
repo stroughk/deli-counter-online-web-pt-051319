@@ -1,5 +1,5 @@
 def line(katz_deli)
-  if line.empty? == true
+  if katz_deli.empty? == true
     puts "The line is currently empty."
   end 
   
