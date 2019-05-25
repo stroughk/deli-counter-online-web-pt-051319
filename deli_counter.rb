@@ -1,20 +1,15 @@
-katz_deli = []
+deli = ["Logan", "Avi", "Spencer"]
 
-def line(katz_deli)
-  if katz_deli.empty? == true
+def line(deli)
+  if deli.empty?
     puts "The line is currently empty."
-      end
+  else
+    current_line = "The line is currently:"
+    deli.each.with_index do |person, i|
+      current_line << " #{i+1}. #{person}"
+    end
+    puts current_line
+  end
 end
 
-other_deli = ["Logan", "Avi", "Spencer"]
-
-def line(other_deli)
- if other_deli.empty? == false
-   other_deli.each_with_index do |name, index|
-   puts "The line is currently: #{index+1}. #{name}"
-   end
- end
-end
-
-
-puts line(other_deli)
+line(deli)
