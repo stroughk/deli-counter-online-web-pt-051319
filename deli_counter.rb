@@ -6,6 +6,8 @@ def line(katz_deli)
       end
 end
 
+other_deli = ["Logan", "Avi", "Spencer"]
+
 def line(other_deli)
  if other_deli.empty? == false
    other_deli.each_with_index do |name, index|
@@ -13,3 +15,6 @@ def line(other_deli)
    end
  end
 end
+
+
+puts line(other_deli)
